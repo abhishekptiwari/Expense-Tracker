@@ -45,8 +45,6 @@ function addTransactionDOM(transaction) {
     `;
     list.appendChild(item);
 }
-
-
 // Update the balance, income and expense
 function UpdateValues() {
     // Creating the amounts array
@@ -86,7 +84,6 @@ function removeTransaction(id) {
   
     init();
   }
-
 
 //Update localstorage
 function updateLocalStorage(){
