@@ -9,8 +9,10 @@ const amount = document.getElementById('amount');
 const localStorageTransactions = JSON.parse(localStorage.getItem('transaction'));
 let transactions = localStorage.getItem('transaction') !== null ? localStorageTransactions : [];
 
+
 function addTransaction(e) {
     e.preventDefault();
+    
     if (text.value.trim() === '' || amount.value.trim() === '') {
         alert('PLease add a text and amount');
     } else {
@@ -27,7 +29,9 @@ function addTransaction(e) {
         text.value = '';
         amount.value = '';
     }
+    
 }
+
 
 //Function generate random Id
 function generateId() {
